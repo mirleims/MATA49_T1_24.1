@@ -1,9 +1,8 @@
 # MATA49_T1_24.1
 
-Os arquivos devem apresentar
+Os arquivos devem ser nomeados como:
+### questaox.asm 
+x-número da questões
 
-; ATIVIDADE PRÁTICA X - QUESTÃO X
 
-; NOME ALUNO 1 - MATRÍCULA
-
-; NOME ALUNO 2 - MATRÍCULA
+Na parte superior deve conter o nome dos membros em forma de comentários.
