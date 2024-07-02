@@ -5,4 +5,4 @@ Os arquivos devem ser nomeados como:
   * x-número da questão
 
 
-OBS: Na parte superior deve conter o nome dos membros da equipe em forma de comentários.
+OBS: Inserir os nomes dos membros da equipe em forma de comentários na parte superior do arquivo .asm. 
