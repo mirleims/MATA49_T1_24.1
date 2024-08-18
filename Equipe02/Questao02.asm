@@ -34,7 +34,7 @@ main:
     xor rdi, rdi
     syscall
 
-factorial:
+fatorial:
     push rbp
     mov rbp, rsp            
     mov rbx, 1     
