@@ -1,6 +1,3 @@
-; Equipe 05
-; Guilherme Rocha Ribeiro, Jean Anderson Hugo Jesus Santos, Vilomar Gomes de Cerqueira Neto
-
 bits 64
 
 global main
@@ -12,7 +9,7 @@ n    resb    1
 
 section .data
 
-msg_solicita_numero db "Digite um numero",10,0
+msg_solicita_numero db "Digite um numero para calcular a sequencia de collatz",10,0
 impri db "novo n: %d"
 seq db 10,"Sequencia de collatz",10,0
 
