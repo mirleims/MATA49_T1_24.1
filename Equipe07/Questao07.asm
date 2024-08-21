@@ -2,7 +2,7 @@
 ;Bruno Henrique dos Santos Luz Santos, Vitor Renato Santos dos Santos
 ;Escreva um programa em Assembly que receba dois valores A e B e apresente a sequência de Fibonacci do intervalo [A,B].
 
-;COMO EXECUTAR
+;COMO EXECUTAR: no Shell, digite os comandos abaixo na ordem em que eles aparecem:
 ;nasm -f elf64 Questao07.asm
 ;gcc -o Questao07 Questao07.o -no-pie
 ;./Questao07
@@ -42,8 +42,8 @@ section .bss
 section .text
 
 main:
-  push rbp
-  mov rbp, rsp
+  push rbp ;armazena rbp na pilha
+  mov rbp, rsp 
 
 leitura:
   mov rdi, DIGITE_AeB
@@ -73,7 +73,7 @@ verificar_limites:
     jb atualiza_valores_n ; Se rax < a, vou somar o próximo
     
     cmp rax, [b]
-    ja end ; Se rax > b, encerra ;O B.O. É AQUI
+    ja end ; Se rax > b, encerra
 
 imprimir_n:
     mov [fibonacci], rax
@@ -94,6 +94,6 @@ soma:
     jmp verificar_limites
 
 end:
-    pop rbp
+    pop rbp ;restaura o valor de rbp a partir da pilha
     mov rax, 0
-    ret
+    ret ;remove o endereço da pilha e o coloca no ponteiro de instrução
