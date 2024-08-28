@@ -15,7 +15,7 @@ section .data
     
     saida db "O fatorial de %d é: %llu", 10, 0     
     
-    erro1 db "Número muito grande, insira um valor menor que 20!", 10, 0
+    erro1 db "Número muito grande, insira um valor menor ou igual a 20!", 10, 0
     erro2 db "Número inválido, insira um valor positivo!", 10, 0
 
 section .bss
